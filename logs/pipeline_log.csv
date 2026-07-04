@@ -1,1 +1,4 @@
-
+paso,descripcion,num_filas,num_columnas,columnas
+01_Carga_Inicial,Lectura del dataset crudo desde la carpeta raw.,8160,8,"['user_id', 'age', 'subscription_plan', 'monthly_watch_time_mins', 'country', 'favorite_genre', 'last_login_date', 'customer_support_tickets']"
+02_Remocion_Duplicados,Se eliminan filas idénticas repetidas.,8034,8,"['user_id', 'age', 'subscription_plan', 'monthly_watch_time_mins', 'country', 'favorite_genre', 'last_login_date', 'customer_support_tickets']"
+03_Limpieza_Nulos_Final,Filas con nulos en variables clave eliminadas. Dataset listo.,8034,8,"['user_id', 'age', 'subscription_plan', 'monthly_watch_time_mins', 'country', 'favorite_genre', 'last_login_date', 'customer_support_tickets']"

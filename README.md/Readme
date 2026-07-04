@@ -1,1 +1,36 @@
+PT1_Mineria_Datos
+Información general Este repositorio contiene el proyecto integrador de la asignatura Minería de Datos 1.
+El trabajo se desarrolla sobre un dataset de usuarios de plataformas de streaming y aplica un flujo completo de análisis: inspección inicial, preparación de datos, análisis exploratorio, reducción de dimensionalidad y comunicación de resultados.
+El proyecto incluye notebooks, informe en PDF, aplicación interactiva en Streamlit y registro de transformaciones ETL.
+________________________________________
+Objetivo del proyecto
+El objetivo es demostrar cómo, a partir de un dataset con problemas de calidad, se puede realizar un proceso completo de limpieza, exploración y reducción de dimensionalidad.
+Se busca garantizar trazabilidad, justificar cada decisión y comunicar los hallazgos de manera clara y reproducible.
+El proyecto integra análisis estadístico, visualización y una aplicación interactiva para facilitar la interpretación de resultados.
+________________________________________
+Dataset
+El dataset streaming_users_dirty.json contiene información de usuarios de plataformas de streaming.
+Incluye variables numéricas (edad, horas de uso, tiempo de suscripción) y categóricas (plataforma, país, género).
+Presenta problemas de calidad como valores faltantes, duplicados e inconsistencias en categorías.
+El dataset original se encuentra en data/raw/ y el dataset limpio en data/processed/.
+El archivo limpio se utiliza en los notebooks y en la aplicación Streamlit.
+El registro de transformaciones realizadas durante el proceso ETL se encuentra en logs/.
+________________________________________
+Estructura del repositorio
+•	data/raw/ → dataset original sin modificaciones.
+•	data/processed/ → dataset final utilizado en el análisis.
+•	notebooks/ → desarrollo ordenado de las etapas del proyecto.
+•	app/ → aplicación pública en Streamlit.
+•	reports/ → informe final en PDF.
+•	logs/ → registro de transformaciones ETL.
+•	README.md → documentación técnica del proyecto.
+•	requirements.txt → dependencias necesarias para ejecutar el proyecto.
+________________________________________
+Preparación y calidad de datos
+Se eliminaron registros duplicados y se imputaron valores faltantes.
+Para variables numéricas se utilizó la mediana, y para categóricas el valor más frecuente.
+Se aplicó escalamiento estándar a las variables numéricas para garantizar comparabilidad.
+El proceso completo se documenta en el notebook 02_calidad_y_limpieza.ipynb y en el log ETL.
+El dataset limpio se guarda en data/processed/ y se utiliza en las etapas posteriores.
+
 
